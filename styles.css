@@ -135,12 +135,18 @@ table {
 }
 
 /* END OF CSS RESET */
+body {
+  background-color: var(--cream);
+}
 
 .desktop-img {
   display: block;
 }
 .mobile-img {
   display: none;
+}
+.img-container {
+  max-width: 1440px;
 }
 
 @media (max-width: 375px) {
@@ -149,26 +155,41 @@ table {
   }
   .mobile-img {
     display: block;
+    width: 100%;
+  }
+  .img-container {
+    max-width: 375px;
   }
   .card {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     padding: 1rem;
     min-height: 100vh;
     min-width: 100vw;
+    border-radius: 5px;
   }
 }
+
+.product-container {
+  background-color: var(--white);
+  padding: 1.5rem;
+}
 .category {
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
   color: var(--dark-greyish-blue);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 .product {
   font-family: 'Fraunces', serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--very-dark-blue);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  line-height: 2;
+  font-size: 0.8rem;
 }
 .to-cart-btn {
   padding: 0.5rem;
