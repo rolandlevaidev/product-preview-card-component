@@ -190,7 +190,38 @@ body {
 .description {
   line-height: 2;
   font-size: 0.8rem;
+  margin-bottom: 2rem;
+  color: var(--dark-greyish-blue);
 }
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.reduced-price {
+  font-family: 'Fraunces', serif;
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  color: var(--dark-greyish-blue);
+}
+
 .to-cart-btn {
-  padding: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 5px;
 }
